@@ -16,4 +16,3 @@ deploy:
   keep-history: true
   on:
     branch: release
-dist: trusty
