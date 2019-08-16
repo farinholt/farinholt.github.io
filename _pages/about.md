@@ -1,12 +1,12 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: <strong>Brown</strong> Farinholt
+description: PhD, <a href="https://cse.ucsd.edu/">UC San Diego Computer Science & Engineering</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: cns2016spring.jpg
   address: >
     <p>555 your office number</p>
     <p>123 your address street</p>

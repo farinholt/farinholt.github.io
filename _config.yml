@@ -2,6 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Brown Farinholt
+first_name: Brown
+last_name: Farinholt
 email: brown@farinholt.com
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
