@@ -81,7 +81,10 @@ highlighter: pygments
 
 # Includes & excludes
 include: ['_pages']
-exclude: [vendor]
+exclude:
+  - vendor
+  - Gemfile*
+  - feed.xml
 
 # Plug-ins
 plugins:
@@ -101,7 +104,7 @@ jekyll_get:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Einstein
+  last_name: Farinholt
 
   style: apa
   locale: en
