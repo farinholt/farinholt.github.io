@@ -10,6 +10,7 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jemoji'
     gem 'unicode_utils'
+    gem 'pygments.rb'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
