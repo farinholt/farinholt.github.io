@@ -1,17 +1,15 @@
 source 'https://rubygems.org'
 
 group :jekyll_plugins do
-    gem "jekyll-feed", "~> 0.6"
+    gem "jekyll-feed"
     gem "json"
     gem "hash-joiner"
-    # gem 'github-pages'
     gem 'jekyll'
     gem 'jekyll-email-protect'
     gem 'jekyll-paginate'
     gem 'jekyll-scholar'
     gem 'jemoji'
     gem 'unicode_utils'
-    gem 'pygments.rb', '~> 0.6.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
