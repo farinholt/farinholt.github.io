@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: education
+permalink: /education/
+description: 
 ---
 
 {% for project in site.projects %}
@@ -18,8 +18,6 @@ description: A growing collection of your cool projects.
         {% endif %}    
         <span>
             <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
         </span>
         </a>
     </div>
@@ -36,8 +34,6 @@ description: A growing collection of your cool projects.
         {% endif %}    
         <span>
             <h1>{{ project.title }}</h1>
-            <br/>
-            <p>{{ project.description }}</p>
         </span>
         </a>
     </div>

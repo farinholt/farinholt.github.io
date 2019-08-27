@@ -84,6 +84,7 @@ exclude:
   - vendor
   - Gemfile*
   - feed.xml
+  - README.md
 
 # Plug-ins
 plugins:
