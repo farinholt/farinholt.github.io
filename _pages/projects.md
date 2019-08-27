@@ -5,7 +5,7 @@ permalink: /education/
 description: 
 ---
 
-{% for project in site.projects %}
+{% for project in site.education %}
 
 {% if project.redirect %}
 <div class="project">

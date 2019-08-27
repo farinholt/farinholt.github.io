@@ -59,14 +59,9 @@ enable_katex:       true
 # Collections
 # -----------------------------------------------------------------------------
 collections:
-  news:
-    defaults:
-      layout: post
+  education:
     output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
+    permalink: /education/:path/
 
 news_limit: 5
 
