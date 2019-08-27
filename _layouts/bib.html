@@ -15,7 +15,9 @@
   {% else %}
     <span class="title">{{entry.title}}</span>
     <span class="author">
-      {% for author in entry.author_array %}
+      {{ entry.author }}.
+      <!-- {% for a in entry.author %}
+        {{ a }} test
         {% if forloop.length == 1 %}
           {% if author.last == site.scholar.last_name %}
             <em>{{author.last}}, {{author.first}}</em>
@@ -45,7 +47,7 @@
             {% endif %}
           {% endunless %}
         {% endif %}
-      {% endfor %}
+      {% endfor %} -->
     </span>
 
     <span class="periodical">
@@ -71,19 +73,22 @@
     [<a href="{{ entry.html }}" target="_blank">HTML</a>]
   {% endif %}
   {% if entry.pdf %}
-    [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+    [<a href="{{ entry.pdf }}" target="_blank">PDF</a>]
   {% endif %}
   {% if entry.supp %}
-    [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
+    [<a href="{{ entry.supp }}" target="_blank">Supp</a>]
   {% endif %}
   {% if entry.poster %}
-    [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
+    [<a href="{{ entry.poster }}" target="_blank">Poster</a>]
   {% endif %}
   {% if entry.slides %}
-    [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
+    [<a href="{{ entry.slides }}" target="_blank">Slides</a>]
   {% endif %}
   {% if entry.code %}
     [<a href="{{ entry.code }}" target="_blank">Code</a>]
+  {% endif %}
+  {% if entry.url %}
+    [<a href="{{ entry.url }}" target="_blank">URL</a>]
   {% endif %}
   </span>
 
