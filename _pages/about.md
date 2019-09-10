@@ -16,7 +16,7 @@ news: false
 social: true
 ---
 
-I am a computer security researcher at [UC San Diego](https://cse.ucsd.edu/) in the Systems & Networking ([Sysnet](https://www.sysnet.ucsd.edu/sysnet/)) and Security & Cryptography ([Cryptosec](https://cryptosec.ucsd.edu/)) research groups. 
+I am a computer security researcher at [UC San Diego](https://cse.ucsd.edu/) in the Systems & Networking ([Sysnet](https://www.sysnet.ucsd.edu/sysnet/)) and Security & Cryptography ([Cryptosec](https://cryptosec.ucsd.edu/)) research groups.
 
 I am a member of the Center for Evidence-based Security Research ([CESR](https://www.evidencebasedsecurity.org/index.html)), the Center for Networked Systems ([CNS](https://cns.ucsd.edu/)), and the Aviation Cyber Security Group ([Aerosec](https://aerosec.org/)).
 
