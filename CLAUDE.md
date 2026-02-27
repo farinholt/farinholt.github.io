@@ -4,33 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal academic website for Brown Farinholt, built with Jekyll using the [al-folio](https://github.com/alshedivat/al-folio) theme. Hosted on GitHub Pages at brownfarinholt.com.
-
-## Build Commands
-
-```bash
-bundle install          # Install Ruby dependencies
-bundle exec jekyll serve  # Local dev server (http://localhost:4000)
-JEKYLL_ENV=production bundle exec jekyll build  # Production build (outputs to _site/)
-```
-
-## Deployment
-
-Travis CI builds the `release` branch and deploys the built `_site/` to the `master` branch via GitHub Pages. Do not push directly to `master`; commit to `release` instead.
+Personal academic website for Brown Farinholt. Plain static HTML/CSS hosted on GitHub Pages at brownfarinholt.com. No build step — what you see in the repo is what gets served.
 
 ## Architecture
 
-- **`_config.yml`**: Central configuration — site metadata, social links, Jekyll plugins, Jekyll-Scholar settings, and collection definitions
-- **`_pages/`**: Main content pages. `about.md` serves as the site index (`permalink: /`). Uses YAML front matter for layout, profile image, and social toggle
-- **`_layouts/`**: Template hierarchy: `default.html` → `page.html` → `about.html`. Default wraps all pages with head/header/footer includes
-- **`_includes/`**: Reusable HTML partials (header, footer, social icons, news, pagination)
-- **`_sass/`**: SCSS stylesheets. Theme color and all design variables are in `_variables.scss` (`$theme-color` on line 73)
-- **`_plugins/jekyll_get.rb`**: Custom plugin that fetches JSON data at build time (pulls GitHub repos from the API into `site.data.github`)
-- **`assets/`**: Static files — CSS, JS, fonts, images, PDFs, and PGP keys
+- **`index.html`**: Single-page site with all content — navigation, about section, education section, social links, and footer. Sections are anchored (`#about`, `#education`)
+- **`style.css`**: All styles in one plain CSS file. Theme color is `#B509AC` (purple). Responsive breakpoints at 32em, 48em, and 64em; hamburger menu triggers at 600px
+- **`assets/`**: Static files — icon font CSS (`css/`), web fonts (`webfonts/`, `fonts/`), favicons (`favicons/`), images (`img/`), PDFs (`pdf/`), and PGP keys (`keys/`)
+- **`CNAME`**: Custom domain configuration (brownfarinholt.com)
+
+## Deployment
+
+GitHub Pages serves the `master` branch directly. No build process or CI pipeline.
 
 ## Key Conventions
 
-- Publications are auto-generated from BibTeX via jekyll-scholar. Source bibliography goes in `_bibliography/papers.bib`, rendered using the `bib` template
-- The `education` collection is defined in `_config.yml` and its pages live in `_pages/education.md`
-- KaTeX is enabled for math rendering; Pygments handles code syntax highlighting
-- `_pages/about.md` is the homepage — do not create a separate `index.html` in the root directory
+- External publications link to Google Scholar rather than a local bibliography
+- Icon fonts: Font Awesome (via `fontawesome-all.min.css`) for general icons, Academicons (via `academicons.min.css`) for academic service icons (Google Scholar, ORCID)
