@@ -9,6 +9,7 @@ html {
     margin-left: calc(100vw - 100%);
     margin-right: 0;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -24,8 +25,6 @@ body {
     color: #666;
     font-weight: 100;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 /* Typography */
@@ -71,7 +70,7 @@ small, .small { font-size: 0.707rem; }
 }
 
 .page-content {
-    padding: 100px 0;
+    padding: 100px 0 60px;
 }
 
 /* Links */
@@ -105,20 +104,14 @@ article a:hover {
 /* Header */
 .site-header {
     border-bottom: 1px solid #e8e8e8;
-    background-color: #fff;
-    opacity: 0.95;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     position: fixed;
-    left: calc((100vw - 100%) / 2);
+    left: 0;
     top: 0;
     width: 100%;
     z-index: 50;
-}
-
-.site-title {
-    font-size: 20px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
 }
 
 .site-nav {
@@ -135,6 +128,11 @@ article a:hover {
 
 .site-nav .page-link:not(:first-child) {
     margin-left: 10px;
+}
+
+/* Anchor offset for fixed header */
+section[id] {
+    scroll-margin-top: 70px;
 }
 
 /* Post */
@@ -161,17 +159,15 @@ article a:hover {
     padding-top: 20px;
 }
 
-.contacticon {
-    display: block;
-    font-size: 60px;
-    margin: 10px;
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 50px;
+    margin: 10px 0;
 }
 
-.center {
-    text-align: center;
-}
-
-.col.three.caption {
+.contact-note {
     text-align: center;
     margin-top: 10px;
     color: #666;
@@ -255,6 +251,11 @@ footer a:hover { color: #B509AC; }
     .site-nav .page-link:not(:last-child) {
         margin-right: 0;
     }
+
+    .contact-icons {
+        font-size: 40px;
+        gap: 18px;
+    }
 }
 
 /* Responsive: medium+ */
@@ -262,7 +263,6 @@ footer a:hover { color: #B509AC; }
     .site-header { text-align: left; }
     .site-nav { margin-top: 0; }
     .site-header a { font-size: 1rem; }
-    .site-header .site-title { font-size: 1.25rem; float: left; }
     .site-header .site-nav { float: right; }
 }
 
