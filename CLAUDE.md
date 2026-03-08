@@ -15,7 +15,7 @@ Personal academic website for Brown Farinholt. Plain static HTML/CSS hosted on G
 
 ## Deployment
 
-GitHub Pages serves the `master` branch directly. No build process or CI pipeline.
+GitHub Pages serves the `release` branch directly. No build process or CI pipeline.
 
 ## Key Conventions
 
