@@ -3,131 +3,290 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>brown farinholt</title>
-    <meta name="description" content="Homepage of Brown Farinholt, PhD.">
-
+    <title>Brown Farinholt</title>
+    <meta name="description" content="Brown Farinholt. Detection and response engineer at Meta. Contact, professional profile, research, and code.">
+    <meta name="theme-color" content="#20262e">
     <link rel="stylesheet" href="style.css">
-
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <script src="site.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- icon fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="assets/css/academicons.min.css">
 </head>
 <body>
-
-<header class="site-header">
-    <div class="wrapper">
-        <nav class="site-nav">
-            <input type="checkbox" id="nav-trigger" class="nav-trigger">
-            <label for="nav-trigger">
-                <span class="menu-icon">
-                    <svg viewBox="0 0 18 15" width="18px" height="15px">
-                        <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-                        <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-                        <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-                    </svg>
-                </span>
-            </label>
-
-            <div class="trigger">
-                <a class="page-link" href="#about">about</a>
-                <a class="page-link" href="#education">education</a>
-                <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=0e2iFjYAAAAJ&view_op=list_works&sortby=pubdate">publications</a>
+<a class="skip-link" href="#main">Skip to search results</a>
+<header class="app-header">
+    <a href="./" class="app-brand" aria-label="farinholt home"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14h4v7H3zm7-7h4v14h-4zm7-4h4v18h-4z"/></svg><span>farinholt</span></a>
+    <nav class="app-nav" aria-label="Application">
+        <a href="#main" aria-current="page">Search</a>
+        <details class="saved-menu js-control" hidden>
+            <summary>Saved searches <svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m4 6 4 4 4-4"/></svg></summary>
+            <div class="menu-panel">
+                <button type="button" data-saved-query="*">All events</button>
+                <button type="button" data-saved-query='event.dataset:profile'>Identity</button>
+                <button type="button" data-saved-query='service.name:Email'>Contact</button>
+                <button type="button" data-saved-query='service.name:"Google Scholar"'>Publications</button>
             </div>
-        </nav>
-    </div>
+        </details>
+    </nav>
+    <div class="workspace-label">Workspace: <strong>Default</strong></div>
 </header>
 
-<div class="page-content">
-    <div class="wrapper">
-
-        <!-- About -->
-        <section id="about" class="post">
-            <header class="post-header">
-                <h1 class="post-title"><strong>brown</strong> farinholt</h1>
-            </header>
-
-            <article class="post-content clearfix">
-                <ul>
-                    <li>Security Tech Lead at Meta</li>
-                    <li>Enterprise Detection &amp; Response</li>
-                    <li>Secure AI Agent Deployment</li>
-                    <li>Ph.D., Computer Science &amp; Engineering, <a href="https://cse.ucsd.edu/">UC San Diego</a></li>
-                </ul>
-            </article>
-
-            <div class="social">
-                <div class="contact-icons">
-                    <a href="mailto:brown@farinholt.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://scholar.google.com/citations?user=0e2iFjYAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-                    <a href="https://github.com/farinholt" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/brownfarinholt" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.threads.net/@farinholt451" target="_blank" rel="noopener" title="Threads"><i class="fab fa-threads"></i></a>
-                    <a href="assets/keys/BB23D7D1_pub.asc" title="PGP Public Key"><i class="fas fa-key"></i></a>
+<main id="main">
+    <div class="page-heading">
+        <h1>Search</h1>
+        <div class="page-actions js-control" hidden>
+            <button type="button" class="plain-button" id="export-results" aria-label="Export displayed events" title="Export displayed events"><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 2v8m-3-3 3 3 3-3M3 11v3h10v-3"/></svg> Export</button>
+            <details class="help-menu">
+                <summary class="plain-button"><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6"/><path d="M6.5 6a1.5 1.5 0 1 1 2 1.4L8 8v1m0 2v.5"/></svg> Search help</summary>
+                <div class="menu-panel help-panel">
+                    <h2>Search syntax</h2>
+                    <p>Search words or quoted phrases. Use <code>field:value</code> to match a field, and <code>*</code> for a wildcard. Combine conditions with <code>AND</code>.</p>
+                    <button type="button" data-saved-query='user.full_name:"Brown Farinholt"'>user.full_name:"Brown Farinholt"</button>
+                    <button type="button" data-saved-query='event.dataset:links'>event.dataset:links</button>
+                    <p><kbd>/</kbd> focuses the search. <kbd>Esc</kbd> closes an open menu.</p>
                 </div>
-                <p class="contact-note">
-                    Email is usually the fastest way to reach me.
-                </p>
+            </details>
+        </div>
+    </div>
+
+    <form class="search-form js-control" role="search" hidden>
+        <div class="search-input-wrap">
+            <svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 4 4"/></svg>
+            <label class="sr-only" for="query">Search events</label>
+            <input id="query" name="query" type="search" value="*" placeholder='Search events, e.g. user.name:farinholt' autocomplete="off" spellcheck="false" aria-describedby="query-error">
+        </div>
+        <label class="time-range"><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 2"/></svg><span class="sr-only">Time range</span><select id="time-range"><option value="15m">Last 15 minutes</option><option value="24h">Last 24 hours</option><option value="all">All time</option></select></label>
+        <button class="search-button" type="submit"><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 4 4"/></svg> Search</button>
+    </form>
+    <p id="query-error" class="query-error" role="alert" hidden></p>
+    <div class="filter-bar js-control" hidden>
+        <div id="filter-chips" aria-label="Active filters"></div>
+        <button type="button" id="clear-search" class="text-button" hidden>Clear search</button>
+        <span id="search-status" class="search-status" role="status" aria-live="polite">Search completed</span>
+    </div>
+    <noscript><p class="noscript-note">Search controls require JavaScript. All records and links are available below.</p></noscript>
+
+    <div class="results-topbar">
+        <div class="result-tabs js-control" aria-label="Results view" hidden>
+            <button type="button" data-result-view="events" aria-pressed="true" aria-controls="events-view">Events <span id="tab-count">6</span></button>
+            <button type="button" data-result-view="statistics" aria-pressed="false" aria-controls="statistics-view">Statistics</button>
+        </div>
+        <span class="result-total"><strong id="result-count">6</strong> events</span>
+        <button type="button" id="timeline-toggle" class="text-button js-control" aria-expanded="true" aria-controls="timeline" hidden>Hide timeline</button>
+    </div>
+
+    <section class="timeline js-control" id="timeline" aria-label="Event timeline" hidden>
+        <div class="chart-heading"><span>Events over time</span><span id="chart-interval">1 minute intervals</span></div>
+        <div class="chart" role="img" aria-label="6 events">
+            <div class="chart-y" aria-hidden="true"><span id="chart-max">6</span><span id="chart-mid">3</span><span>0</span></div>
+            <div class="chart-plot"><div class="chart-grid" aria-hidden="true"></div><div id="chart-bars" class="chart-bars" aria-hidden="true"></div><div class="chart-x" id="chart-labels" aria-hidden="true"></div></div>
+        </div>
+    </section>
+
+    <div class="workspace" id="workspace">
+        <aside class="fields-panel" id="fields-panel" aria-labelledby="fields-heading">
+            <div class="data-view">
+                <label for="dataset" class="control-label">Data view</label>
+                <select id="dataset" class="js-control" hidden><option value="all">personal</option><option value="profile">profile</option><option value="links">links</option></select>
+                <noscript><strong>personal</strong></noscript>
             </div>
+            <div class="fields-heading"><h2 id="fields-heading">Fields</h2><span id="field-count">8</span></div>
+            <label class="field-search js-control" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 4 4"/></svg><span class="sr-only">Filter field names</span><input id="field-search" type="search" placeholder="Find a field" autocomplete="off"></label>
+            <h3 class="field-group-title">Selected fields</h3>
+            <ul class="selected-fields"><li><span class="field-type">t</span> @timestamp</li><li><span class="field-type">a</span> event.dataset</li><li><span class="field-type">a</span> message</li></ul>
+            <h3 class="field-group-title">Available fields</h3>
+            <div id="available-fields"><div class="static-field"><span class="field-type">a</span> event.action</div><div class="static-field"><span class="field-type">a</span> user.name</div><div class="static-field"><span class="field-type">a</span> user.full_name</div><div class="static-field"><span class="field-type">a</span> user.title</div><div class="static-field"><span class="field-type">a</span> organization.name</div><div class="static-field"><span class="field-type">a</span> user.email</div><div class="static-field"><span class="field-type">a</span> service.name</div><div class="static-field"><span class="field-type">a</span> url.full</div></div>
+            <p id="no-fields" class="no-fields" hidden>No matching fields.</p>
+        </aside>
+
+        <section class="result-content" aria-label="Search results">
+            <div class="table-toolbar">
+                <button type="button" class="plain-button js-control" id="fields-toggle" aria-controls="fields-panel" aria-expanded="true" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="2" y="2" width="12" height="12" rx="1"/><path d="M6 2v12"/></svg> Fields</button>
+                <span id="result-range">6 displayed</span>
+                <button type="button" id="sort-time" class="plain-button js-control" aria-label="Sort oldest first" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 2v12m-3-3 3 3 3-3"/></svg> <span>Newest first</span></button>
+            </div>
+            <div id="events-view">
+                <div class="table-scroll" role="region" aria-label="Events table" tabindex="0">
+                    <table class="events-table">
+                        <caption class="sr-only">Profile and reference events for Brown Farinholt</caption>
+                        <thead><tr><th class="expand-cell"><span class="sr-only">Details</span></th><th scope="col" class="time-cell">@timestamp</th><th scope="col" class="source-cell">event.dataset</th><th scope="col">message</th></tr></thead>
+                        <tbody id="event-rows"><tr class="event-row" data-record="profile-001">
+    <td class="expand-cell"><button type="button" class="expand-button js-control" aria-label="Details for Brown Farinholt" aria-expanded="true" aria-controls="detail-profile-001" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5"/></svg></button></td>
+    <td class="time-cell"><time data-time="profile-001">—</time></td>
+    <td><span class="dataset-value">profile</span></td>
+    <td class="event-message"><span class="log-pair"><span class="log-key">user.full_name</span>=<span class="log-value">"Brown Farinholt"</span></span> <span class="log-pair"><span class="log-key">user.title</span>=<span class="log-value">"Detection &amp; response engineer"</span></span> <span class="log-pair"><span class="log-key">organization.name</span>=<span class="log-value">"Meta"</span></span></td>
+</tr>
+<tr class="expanded-row" id="detail-profile-001" >
+    <td colspan="4"><div class="record-detail">
+        <div class="record-heading"><strong>Event details</strong><code>profile-001</code></div>
+        <div class="detail-views js-control" aria-label="Event display" hidden>
+            <button type="button" data-record-view="fields" aria-pressed="true" aria-controls="fields-profile-001">Fields</button>
+            <button type="button" data-record-view="json" aria-pressed="false" aria-controls="json-profile-001">JSON</button>
+        </div>
+        <table class="record-fields" id="fields-profile-001"><caption class="sr-only">Fields for Brown Farinholt</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">user.full_name</th><td>Brown Farinholt</td></tr><tr><th scope="row">user.title</th><td>Detection &amp; response engineer</td></tr><tr><th scope="row">organization.name</th><td>Meta</td></tr><tr><th scope="row">user.email</th><td><a href="mailto:brown@farinholt.com">brown@farinholt.com</a></td></tr></tbody></table>
+        <pre class="record-json" id="json-profile-001" tabindex="0" hidden></pre>
+    </div></td>
+</tr>
+<tr class="event-row" data-record="links-001">
+    <td class="expand-cell"><button type="button" class="expand-button js-control" aria-label="Details for LinkedIn" aria-expanded="false" aria-controls="detail-links-001" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5"/></svg></button></td>
+    <td class="time-cell"><time data-time="links-001">—</time></td>
+    <td><span class="dataset-value">links</span></td>
+    <td class="event-message"><span class="log-pair"><span class="log-key">service.name</span>=<span class="log-value">"LinkedIn"</span></span> <span class="log-pair"><span class="log-key">url.full</span>=<span class="log-value">"<a href="https://www.linkedin.com/in/brownfarinholt">https://www.linkedin.com/in/brownfarinholt</a>"</span></span></td>
+</tr>
+<tr class="expanded-row" id="detail-links-001" hidden>
+    <td colspan="4"><div class="record-detail">
+        <div class="record-heading"><strong>Event details</strong><code>links-001</code></div>
+        <div class="detail-views js-control" aria-label="Event display" hidden>
+            <button type="button" data-record-view="fields" aria-pressed="true" aria-controls="fields-links-001">Fields</button>
+            <button type="button" data-record-view="json" aria-pressed="false" aria-controls="json-links-001">JSON</button>
+        </div>
+        <table class="record-fields" id="fields-links-001"><caption class="sr-only">Fields for LinkedIn</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">service.name</th><td>LinkedIn</td></tr><tr><th scope="row">url.full</th><td><a href="https://www.linkedin.com/in/brownfarinholt">https://www.linkedin.com/in/brownfarinholt</a></td></tr><tr><th scope="row">user.name</th><td>farinholt</td></tr></tbody></table>
+        <pre class="record-json" id="json-links-001" tabindex="0" hidden></pre>
+    </div></td>
+</tr>
+<tr class="event-row" data-record="links-002">
+    <td class="expand-cell"><button type="button" class="expand-button js-control" aria-label="Details for Google Scholar" aria-expanded="false" aria-controls="detail-links-002" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5"/></svg></button></td>
+    <td class="time-cell"><time data-time="links-002">—</time></td>
+    <td><span class="dataset-value">links</span></td>
+    <td class="event-message"><span class="log-pair"><span class="log-key">service.name</span>=<span class="log-value">"Google Scholar"</span></span> <span class="log-pair"><span class="log-key">url.full</span>=<span class="log-value">"<a href="https://scholar.google.com/citations?user=0e2iFjYAAAAJ">https://scholar.google.com/citations?user=0e2iFjYAAAAJ</a>"</span></span></td>
+</tr>
+<tr class="expanded-row" id="detail-links-002" hidden>
+    <td colspan="4"><div class="record-detail">
+        <div class="record-heading"><strong>Event details</strong><code>links-002</code></div>
+        <div class="detail-views js-control" aria-label="Event display" hidden>
+            <button type="button" data-record-view="fields" aria-pressed="true" aria-controls="fields-links-002">Fields</button>
+            <button type="button" data-record-view="json" aria-pressed="false" aria-controls="json-links-002">JSON</button>
+        </div>
+        <table class="record-fields" id="fields-links-002"><caption class="sr-only">Fields for Google Scholar</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">service.name</th><td>Google Scholar</td></tr><tr><th scope="row">url.full</th><td><a href="https://scholar.google.com/citations?user=0e2iFjYAAAAJ">https://scholar.google.com/citations?user=0e2iFjYAAAAJ</a></td></tr><tr><th scope="row">user.name</th><td>farinholt</td></tr></tbody></table>
+        <pre class="record-json" id="json-links-002" tabindex="0" hidden></pre>
+    </div></td>
+</tr>
+<tr class="event-row" data-record="links-003">
+    <td class="expand-cell"><button type="button" class="expand-button js-control" aria-label="Details for GitHub" aria-expanded="false" aria-controls="detail-links-003" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5"/></svg></button></td>
+    <td class="time-cell"><time data-time="links-003">—</time></td>
+    <td><span class="dataset-value">links</span></td>
+    <td class="event-message"><span class="log-pair"><span class="log-key">service.name</span>=<span class="log-value">"GitHub"</span></span> <span class="log-pair"><span class="log-key">url.full</span>=<span class="log-value">"<a href="https://github.com/farinholt">https://github.com/farinholt</a>"</span></span></td>
+</tr>
+<tr class="expanded-row" id="detail-links-003" hidden>
+    <td colspan="4"><div class="record-detail">
+        <div class="record-heading"><strong>Event details</strong><code>links-003</code></div>
+        <div class="detail-views js-control" aria-label="Event display" hidden>
+            <button type="button" data-record-view="fields" aria-pressed="true" aria-controls="fields-links-003">Fields</button>
+            <button type="button" data-record-view="json" aria-pressed="false" aria-controls="json-links-003">JSON</button>
+        </div>
+        <table class="record-fields" id="fields-links-003"><caption class="sr-only">Fields for GitHub</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">service.name</th><td>GitHub</td></tr><tr><th scope="row">url.full</th><td><a href="https://github.com/farinholt">https://github.com/farinholt</a></td></tr><tr><th scope="row">user.name</th><td>farinholt</td></tr></tbody></table>
+        <pre class="record-json" id="json-links-003" tabindex="0" hidden></pre>
+    </div></td>
+</tr>
+<tr class="event-row" data-record="links-004">
+    <td class="expand-cell"><button type="button" class="expand-button js-control" aria-label="Details for Email" aria-expanded="false" aria-controls="detail-links-004" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5"/></svg></button></td>
+    <td class="time-cell"><time data-time="links-004">—</time></td>
+    <td><span class="dataset-value">links</span></td>
+    <td class="event-message"><span class="log-pair"><span class="log-key">service.name</span>=<span class="log-value">"Email"</span></span> <span class="log-pair"><span class="log-key">url.full</span>=<span class="log-value">"<a href="mailto:brown@farinholt.com">mailto:brown@farinholt.com</a>"</span></span></td>
+</tr>
+<tr class="expanded-row" id="detail-links-004" hidden>
+    <td colspan="4"><div class="record-detail">
+        <div class="record-heading"><strong>Event details</strong><code>links-004</code></div>
+        <div class="detail-views js-control" aria-label="Event display" hidden>
+            <button type="button" data-record-view="fields" aria-pressed="true" aria-controls="fields-links-004">Fields</button>
+            <button type="button" data-record-view="json" aria-pressed="false" aria-controls="json-links-004">JSON</button>
+        </div>
+        <table class="record-fields" id="fields-links-004"><caption class="sr-only">Fields for Email</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">service.name</th><td>Email</td></tr><tr><th scope="row">url.full</th><td><a href="mailto:brown@farinholt.com">mailto:brown@farinholt.com</a></td></tr><tr><th scope="row">user.name</th><td>farinholt</td></tr></tbody></table>
+        <pre class="record-json" id="json-links-004" tabindex="0" hidden></pre>
+    </div></td>
+</tr>
+<tr class="event-row" data-record="links-005">
+    <td class="expand-cell"><button type="button" class="expand-button js-control" aria-label="Details for PGP" aria-expanded="false" aria-controls="detail-links-005" hidden><svg class="icon " viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="m6 3 5 5-5 5"/></svg></button></td>
+    <td class="time-cell"><time data-time="links-005">—</time></td>
+    <td><span class="dataset-value">links</span></td>
+    <td class="event-message"><span class="log-pair"><span class="log-key">service.name</span>=<span class="log-value">"PGP"</span></span> <span class="log-pair"><span class="log-key">url.full</span>=<span class="log-value">"<a href="assets/keys/BB23D7D1_pub.asc">assets/keys/BB23D7D1_pub.asc</a>"</span></span></td>
+</tr>
+<tr class="expanded-row" id="detail-links-005" hidden>
+    <td colspan="4"><div class="record-detail">
+        <div class="record-heading"><strong>Event details</strong><code>links-005</code></div>
+        <div class="detail-views js-control" aria-label="Event display" hidden>
+            <button type="button" data-record-view="fields" aria-pressed="true" aria-controls="fields-links-005">Fields</button>
+            <button type="button" data-record-view="json" aria-pressed="false" aria-controls="json-links-005">JSON</button>
+        </div>
+        <table class="record-fields" id="fields-links-005"><caption class="sr-only">Fields for PGP</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody><tr><th scope="row">service.name</th><td>PGP</td></tr><tr><th scope="row">url.full</th><td><a href="assets/keys/BB23D7D1_pub.asc">assets/keys/BB23D7D1_pub.asc</a></td></tr><tr><th scope="row">user.name</th><td>farinholt</td></tr></tbody></table>
+        <pre class="record-json" id="json-links-005" tabindex="0" hidden></pre>
+    </div></td>
+</tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="statistics-view" hidden>
+                <table class="statistics-table"><caption class="sr-only">Events grouped by dataset</caption><thead><tr><th scope="col">event.dataset</th><th scope="col">count</th></tr></thead><tbody id="statistics-rows"></tbody></table>
+            </div>
+            <div id="empty-results" class="empty-results" hidden><h2>No results found</h2><p>Adjust the search query, filters, or time range.</p><button type="button" class="secondary-button" data-saved-query="*">Clear search</button></div>
         </section>
-
-        <!-- Education -->
-        <section id="education" class="post">
-            <header class="post-header">
-                <h1 class="post-title">education</h1>
-            </header>
-
-            <article class="post-content clearfix">
-                <ul>
-                    <li><strong>Ph.D., Computer Science &amp; Engineering</strong>, <a href="https://cse.ucsd.edu/">UC San Diego</a>, 2019
-                        <ul>
-                            <li>Groups: <a href="https://www.sysnet.ucsd.edu/sysnet/">Sysnet</a>, <a href="https://cryptosec.ucsd.edu/">Cryptosec</a>, <a href="https://www.evidencebasedsecurity.org/index.html">CESR</a>, <a href="https://cns.ucsd.edu/">CNS</a>, <a href="https://aerosec.org/">Aerosec</a></li>
-                            <li>Dissertation: <a href="https://escholarship.org/uc/item/3vv544n5"><em>Understanding the Remote Access Trojan malware ecosystem through the lens of the infamous DarkComet RAT</em></a></li>
-                        </ul>
-                    </li>
-                    <li><strong>M.S., Computer Science</strong>, <a href="https://cse.ucsd.edu/">UC San Diego</a>, 2015
-                        <ul>
-                            <li>Research exam: <a href="assets/pdf/Research_Exam.pdf"><em>The U.S. Electrical Power Grid as a Cyber-Physical System: Understanding Exposed Attack Surfaces</em></a></li>
-                        </ul>
-                    </li>
-                    <li><strong>B.S., Computer Engineering</strong>, <a href="https://www.clemson.edu/cecas/departments/ece/">Clemson University</a>, 2013
-                        <ul>
-                            <li><a href="https://www.clemson.edu/academics/programs/national-scholars/">National Scholars Program</a></li>
-                            <li>Contributor: <a href="https://cacm.acm.org/magazines/2018/5/227189-internet-freedom-in-west-africa/fulltext"><em>Internet Freedom in West Africa: Technical Support for Journalists and Democracy Advocates</em></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
-        </section>
-
     </div>
-</div>
-
-<footer>
-    <div class="wrapper">
-        &copy; Brown Farinholt.
-    </div>
-</footer>
-
+</main>
+<footer class="status-bar"><span>Index: <strong>personal</strong></span><span id="footer-count">6 documents</span><span class="copyright">© Brown Farinholt</span></footer>
+<script type="application/json" id="event-data">[
+  {
+    "_id": "profile-001",
+    "_index": "personal",
+    "event.dataset": "profile",
+    "event.action": "profile.loaded",
+    "user.name": "farinholt",
+    "user.full_name": "Brown Farinholt",
+    "user.title": "Detection & response engineer",
+    "organization.name": "Meta",
+    "user.email": "brown@farinholt.com",
+    "message": "user.full_name=\"Brown Farinholt\" user.title=\"Detection & response engineer\" organization.name=\"Meta\""
+  },
+  {
+    "_id": "links-001",
+    "_index": "personal",
+    "event.dataset": "links",
+    "event.action": "reference.loaded",
+    "user.name": "farinholt",
+    "service.name": "LinkedIn",
+    "url.full": "https://www.linkedin.com/in/brownfarinholt",
+    "message": "service.name=\"LinkedIn\" url.full=\"https://www.linkedin.com/in/brownfarinholt\""
+  },
+  {
+    "_id": "links-002",
+    "_index": "personal",
+    "event.dataset": "links",
+    "event.action": "reference.loaded",
+    "user.name": "farinholt",
+    "service.name": "Google Scholar",
+    "url.full": "https://scholar.google.com/citations?user=0e2iFjYAAAAJ",
+    "message": "service.name=\"Google Scholar\" url.full=\"https://scholar.google.com/citations?user=0e2iFjYAAAAJ\""
+  },
+  {
+    "_id": "links-003",
+    "_index": "personal",
+    "event.dataset": "links",
+    "event.action": "reference.loaded",
+    "user.name": "farinholt",
+    "service.name": "GitHub",
+    "url.full": "https://github.com/farinholt",
+    "message": "service.name=\"GitHub\" url.full=\"https://github.com/farinholt\""
+  },
+  {
+    "_id": "links-004",
+    "_index": "personal",
+    "event.dataset": "links",
+    "event.action": "reference.loaded",
+    "user.name": "farinholt",
+    "service.name": "Email",
+    "url.full": "mailto:brown@farinholt.com",
+    "message": "service.name=\"Email\" url.full=\"mailto:brown@farinholt.com\""
+  },
+  {
+    "_id": "links-005",
+    "_index": "personal",
+    "event.dataset": "links",
+    "event.action": "reference.loaded",
+    "user.name": "farinholt",
+    "service.name": "PGP",
+    "url.full": "assets/keys/BB23D7D1_pub.asc",
+    "message": "service.name=\"PGP\" url.full=\"assets/keys/BB23D7D1_pub.asc\""
+  }
+]</script>
 </body>
 </html>
