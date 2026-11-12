@@ -370,7 +370,7 @@
         fieldsToggle.setAttribute('aria-expanded',String(visible));
     }
     fieldsToggle.addEventListener('click', () => setFieldsVisible(fieldsPanel.hidden));
-    const compact = window.matchMedia('(max-width: 900px)');
+    const compact = window.matchMedia('(max-width: 1024px)');
     compact.addEventListener('change',event => setFieldsVisible(!event.matches));
     document.getElementById('export-results').addEventListener('click', () => {
         const output = state.newest ? state.filtered : [...state.filtered].reverse();

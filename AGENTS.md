@@ -4,7 +4,7 @@ This file provides guidance to coding agents working in this repository.
 
 ## Project and user direction
 
-Brown Farinholt's personal homepage. His title is **Detection & response engineer at Meta**. The site should look like a conventional SIEM search application; its event data introduces him and links to LinkedIn, Google Scholar, GitHub, email, and his PGP key.
+Brown Farinholt's personal homepage. His title is **Detection & response engineer at Meta**. The site should look like a conventional SIEM search application in a dark, centered application window; its event data introduces him and links to LinkedIn, Google Scholar, GitHub, email, and his PGP key.
 
 The browser title must be exactly **Brown Farinholt**. The application name is **farinholt** (lowercase).
 
@@ -17,12 +17,18 @@ The user explicitly requested lively synthetic background activity and larger fi
 ## Architecture
 
 - **`index.html`**: Application header, search controls, timeline, fields sidebar, event table, and inline record details. Six public profile/reference records are embedded as JSON and represented in static HTML. Keep those two representations consistent.
-- **`style.css`**: A conventional light application workspace with a dark navigation bar, compact tables, and green search controls. Responsive breakpoints at 1600px, 900px, and 600px.
+- **`style.css`**: A dark application workspace bounded to 1280px, with outer breathing room, compact tables, and restrained green search controls and charts. The page scrolls naturally; do not impose nested vertical scrolling or a full-screen shell. Responsive breakpoints at 1600px, 1024px, and 600px. Native controls use dark color-scheme.
 - **`site.js`**: Local field/keyword queries, filtering, synthetic background volumes, timeline counts, field values, sorting, record expansion, JSON inspection, and JSON export. Timestamps mark this document's loading, not real security activity.
 - **`assets/`**: Existing favicons, public key, PDFs, and legacy font assets. Keep PDFs and keys available even if not all are linked.
 - **`CNAME`**: brownfarinholt.com.
 
 Plain HTML/CSS and dependency-free JavaScript. No build step, external runtime packages, font downloads, analytics, network queries, or persistent visitor state.
+
+## Saved directions
+
+- `design/siem` preserves the original light SIEM at `301fe61`.
+- `design/detection-flow` preserves the abstract animation at `18bf390`; that work is tabled.
+- `design/siem-dark` contains the dark, bounded SIEM design requested for deployment.
 
 ## Deployment
 
@@ -37,6 +43,7 @@ GitHub Pages serves the `release` branch directly. No build process or CI pipeli
 - Keep user query text out of HTML sinks. Do not use `eval`, dynamically execute queries, or collect visitor information.
 - Keep identity and profile links available without JavaScript.
 - Use accessible native controls, visible keyboard focus, and decorative inline SVG icons. Keep wide tables scrollable on narrow screens.
+- Keep desktop margins and a visible outer application boundary. On mobile, retain small gutters and confine wide-table scrolling to the results area.
 - Keep repository documentation consistent with material design or behavior changes.
 
 ## Verification
