@@ -41,7 +41,7 @@ GitHub Pages serves the `release` branch directly. No build process or CI pipeli
 - Timeline, field volumes, result totals, and statistics use one deterministic synthetic activity model and respond together to the active filters and time range. They may exceed the displayed record count, as explicitly requested by the user.
 - Keep the table, expanded records, and JSON exports limited to the matching profile/reference records. The toolbar reports how many records are displayed; synthetic volumes must not inflate exports or personal facts.
 - Keep user query text out of HTML sinks. Do not use `eval`, dynamically execute queries, or collect visitor information.
-- Keep identity and profile links available without JavaScript.
+- Keep identity and profile links available without JavaScript. Preserve `email_off` comments around static email links so Cloudflare does not replace them with links that require JavaScript.
 - Use accessible native controls, visible keyboard focus, and decorative inline SVG icons. Keep wide tables scrollable on narrow screens.
 - Keep desktop margins and a visible outer application boundary. On mobile, retain small gutters and confine wide-table scrolling to the results area.
 - Keep repository documentation consistent with material design or behavior changes.
